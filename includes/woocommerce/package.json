@@ -1,0 +1,20 @@
+{
+  "name": "trustistecommerce-woocommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^27.8.0"
+  },
+  "scripts": {
+    "build": "npm run build-products && npm run build-subscriptions",
+    "start": "wp-scripts start",
+    "build-products": "wp-scripts build --webpack-src-dir=src/products --output-path=build/products",
+    "build-subscriptions": "wp-scripts build --webpack-src-dir=src/subscriptions --output-path=build/subscriptions"
+  },
+  "author": "",
+  "license": "ISC"
+}
